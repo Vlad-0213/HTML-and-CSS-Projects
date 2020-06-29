@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Three1count Baseball Vlog</title>
+	<link rel="stylesheet" type="text/css" href="css/one_page_website.css">
+</head>
+
+<body>
+	Three1count
+
+	<div>
+		<img src="img/threeonecount.jpg" alt="Threeonecount" style="width:275px;height:250px">
+		<div>
+			<h1>Best hitter count<h1>
+					<p>The best baseball content</p>
+		</div>
+	</div>
+
+	<div>
+		<form action="/threeonecount.html">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value=""><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value=""><br><br>
+			<label for="email">Email address:</label><br>
+			<input type="text" id="email" value=""><br>
+			<input type="submit" value="submit">
+		</form>
+	</div>
+
+
+	<!-- NAV -->
+	<div>
+		<div>
+			<ul>
+				<a href="#home" id="link">
+					<li>HOME</li>
+				</a>
+				<a href="#gallery" id="link">
+					<li>NEWS</lI>
+				</a>
+				<a href="#contact" id="link">
+					<li>TRADE RUMORS</li>
+				</a>
+				<ul>
+		</div>
+	</div>
+	<!--END NAV -->
+
+	<!-- Images used to open the lightbox -->
+	<div class="row">
+		<div class="column">
+			<img src="img/img1.png" style=width:250px;height:200px onclick="openModal();currentSlide(1)"
+				class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="img/img2.jpg" style=width:250px;height:200px onclick="openModal();currentSlide(2)"
+				class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="img/img3.jpg" style=width:250px;height:200px onclick="openModal();currentSlide(3)"
+				class="hover-shadow">
+		</div>
+	</div>
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="img/img1_wide.png" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="img/img2_wide.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="img/img3_wide.png" style="width:100%">
+			</div>
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+			<!-- Thumbnail image controls -->
+			<div class="column">
+				<img class="demo" src="img/img1.png" onclick="currentSlide(1)" alt="Ball on dirt">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="img/img2.jpg" onclick="currentSlide(2)" alt="Seams">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="img/img3.jpg" onclick="currentSlide(3)" alt="2020 season">
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div>
+		<a href="https://www.mlb.com/scores" target="em">MLB score box.</a>
+		<div>
+			www.three1count &nbsp;|&nbsp; &copy; 2020
+		</div>
+	</div>
+	<!--END FOOTER -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/79FHzQzR9Zo" frameborder="0"
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe>
+	<script src="JS/one_page_website.js"></script>
+</body>
+
+</html>
